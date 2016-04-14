@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LCShopingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPs-mJ-YnV" customClass="LCSelectBoxButton">
+                        <rect key="frame" x="20" y="0.0" width="30" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="IdW-hy-Dqz"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="clickSelectedBoxButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NwB-NB-vcJ"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B2N-gN-9fv">
+                        <rect key="frame" x="60" y="10" width="80" height="79"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="jk8-Hb-p58"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTU-QT-YtL">
+                        <rect key="frame" x="150" y="10" width="160" height="79"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJY-8P-dob">
+                                <rect key="frame" x="81" y="8" width="79" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="B2N-gN-9fv" firstAttribute="leading" secondItem="OPs-mJ-YnV" secondAttribute="trailing" constant="10" id="0Ul-he-rSN"/>
+                    <constraint firstItem="B2N-gN-9fv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3QS-ND-mTf"/>
+                    <constraint firstAttribute="bottom" secondItem="B2N-gN-9fv" secondAttribute="bottom" constant="10" id="8ef-Lp-ylZ"/>
+                    <constraint firstItem="RTU-QT-YtL" firstAttribute="leading" secondItem="B2N-gN-9fv" secondAttribute="trailing" constant="10" id="Fv9-Jh-Ujs"/>
+                    <constraint firstAttribute="trailing" secondItem="RTU-QT-YtL" secondAttribute="trailing" constant="10" id="Kaf-1Z-2bW"/>
+                    <constraint firstAttribute="bottom" secondItem="RTU-QT-YtL" secondAttribute="bottom" constant="10" id="MR4-Qb-lHo"/>
+                    <constraint firstItem="RTU-QT-YtL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="S7T-v0-Mh0"/>
+                    <constraint firstItem="OPs-mJ-YnV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XEu-t0-pnB"/>
+                    <constraint firstItem="OPs-mJ-YnV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lWA-et-Rkt"/>
+                    <constraint firstAttribute="bottom" secondItem="OPs-mJ-YnV" secondAttribute="bottom" id="oHm-5C-15g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="SelectBoxButton" destination="OPs-mJ-YnV" id="gpB-NX-vM1"/>
+            </connections>
+            <point key="canvasLocation" x="386" y="264"/>
+        </tableViewCell>
+    </objects>
+</document>

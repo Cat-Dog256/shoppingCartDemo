@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFM-ib-l6h" customClass="LCSelectBoxButton">
+                    <rect key="frame" x="20" y="0.0" width="80" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="ws3-DK-40C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="全选">
+                        <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pressAllButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="uCw-wg-lsi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucX-l6-l6l">
+                    <rect key="frame" x="500" y="0.0" width="80" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="4Bi-5I-nnT"/>
+                    </constraints>
+                    <state key="normal" title="结算(0)"/>
+                    <connections>
+                        <action selector="clickSettlementButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZKs-jv-zdd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不含运费" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaD-DZ-bk3">
+                    <rect key="frame" x="430" y="0.0" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="5ek-Uj-uf9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-XG-g0T">
+                    <rect key="frame" x="110" y="0.0" width="310" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tFM-ib-l6h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0PG-DC-4Dp"/>
+                <constraint firstItem="fl3-XG-g0T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5ci-lp-l1K"/>
+                <constraint firstAttribute="bottom" secondItem="fl3-XG-g0T" secondAttribute="bottom" id="6it-CQ-okX"/>
+                <constraint firstItem="ucX-l6-l6l" firstAttribute="leading" secondItem="uaD-DZ-bk3" secondAttribute="trailing" constant="10" id="7do-oF-UDf"/>
+                <constraint firstItem="uaD-DZ-bk3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8QW-d9-N8B"/>
+                <constraint firstItem="uaD-DZ-bk3" firstAttribute="leading" secondItem="fl3-XG-g0T" secondAttribute="trailing" constant="10" id="Cig-pr-VYd"/>
+                <constraint firstAttribute="bottom" secondItem="ucX-l6-l6l" secondAttribute="bottom" id="Gsj-Ll-1Jv"/>
+                <constraint firstItem="ucX-l6-l6l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TBV-cJ-Y7T"/>
+                <constraint firstAttribute="bottom" secondItem="uaD-DZ-bk3" secondAttribute="bottom" id="Uzi-xD-Ht1"/>
+                <constraint firstAttribute="bottom" secondItem="tFM-ib-l6h" secondAttribute="bottom" id="Y2D-IR-QJs"/>
+                <constraint firstItem="tFM-ib-l6h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="bQS-n2-CnO"/>
+                <constraint firstItem="fl3-XG-g0T" firstAttribute="leading" secondItem="tFM-ib-l6h" secondAttribute="trailing" constant="10" id="hnF-lX-jzk"/>
+                <constraint firstAttribute="trailing" secondItem="ucX-l6-l6l" secondAttribute="trailing" constant="20" id="srx-IS-2YX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allButton" destination="tFM-ib-l6h" id="gff-fO-etl"/>
+                <outlet property="settlementButton" destination="ucX-l6-l6l" id="YTc-bv-0KE"/>
+                <outlet property="totalPreiceLabel" destination="fl3-XG-g0T" id="tZt-eh-3HW"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="182"/>
+        </view>
+    </objects>
+</document>

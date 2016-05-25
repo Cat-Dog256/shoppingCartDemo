@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCOrderViewController">
+            <connections>
+                <outlet property="bottomSumLabel" destination="i0W-Zf-ZEi" id="tm9-Qv-snV"/>
+                <outlet property="orderTableView" destination="M1d-5o-Zw9" id="Izo-Yh-QXe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M1d-5o-Zw9">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="316" id="Gu8-f7-ztQ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Gu8-f7-ztQ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zvq-d8-obd"/>
+                        <outlet property="delegate" destination="-1" id="SG5-Ky-avw"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Olk-g2-mnL">
+                    <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSF-HR-czW">
+                            <rect key="frame" x="230" y="0.0" width="80" height="44"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="hFx-cT-kWr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="确认订单"/>
+                            <connections>
+                                <action selector="makeSuerTheOrderAction:" destination="-1" eventType="touchUpInside" id="N1w-VM-c65"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qA-uY-CWO">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ibv-Eq-869"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0W-Zf-ZEi" customClass="LCSumLabel">
+                            <rect key="frame" x="10" y="0.0" width="210" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bSF-HR-czW" firstAttribute="leading" secondItem="i0W-Zf-ZEi" secondAttribute="trailing" constant="10" id="5Xt-Wx-PIT"/>
+                        <constraint firstAttribute="trailing" secondItem="3qA-uY-CWO" secondAttribute="trailing" id="918-Ac-8Em"/>
+                        <constraint firstItem="3qA-uY-CWO" firstAttribute="top" secondItem="Olk-g2-mnL" secondAttribute="top" id="9Wt-TM-PXV"/>
+                        <constraint firstItem="i0W-Zf-ZEi" firstAttribute="leading" secondItem="Olk-g2-mnL" secondAttribute="leading" constant="10" id="9jb-6p-IXs"/>
+                        <constraint firstItem="i0W-Zf-ZEi" firstAttribute="top" secondItem="Olk-g2-mnL" secondAttribute="top" id="Brf-4y-nma"/>
+                        <constraint firstItem="3qA-uY-CWO" firstAttribute="leading" secondItem="Olk-g2-mnL" secondAttribute="leading" id="FQj-Jv-HU4"/>
+                        <constraint firstAttribute="bottom" secondItem="i0W-Zf-ZEi" secondAttribute="bottom" id="ILx-UV-kG4"/>
+                        <constraint firstAttribute="trailing" secondItem="bSF-HR-czW" secondAttribute="trailing" constant="10" id="Lh2-Cf-MQv"/>
+                        <constraint firstAttribute="bottom" secondItem="bSF-HR-czW" secondAttribute="bottom" id="kv8-kc-usZ"/>
+                        <constraint firstItem="bSF-HR-czW" firstAttribute="top" secondItem="Olk-g2-mnL" secondAttribute="top" id="sbd-nL-WWz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="M1d-5o-Zw9" secondAttribute="trailing" id="5uC-wI-V2n"/>
+                <constraint firstItem="M1d-5o-Zw9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8CK-7T-4GI"/>
+                <constraint firstItem="M1d-5o-Zw9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A9c-Kh-Atj"/>
+                <constraint firstAttribute="bottom" secondItem="Olk-g2-mnL" secondAttribute="bottom" id="DS5-c8-rO6"/>
+                <constraint firstItem="M1d-5o-Zw9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dg6-ki-DSE"/>
+                <constraint firstItem="Olk-g2-mnL" firstAttribute="top" secondItem="M1d-5o-Zw9" secondAttribute="bottom" id="FhY-Gi-C3W"/>
+                <constraint firstItem="Olk-g2-mnL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LnV-AF-MvR"/>
+                <constraint firstAttribute="trailing" secondItem="M1d-5o-Zw9" secondAttribute="trailing" id="YXG-2g-Skh"/>
+                <constraint firstAttribute="bottom" secondItem="M1d-5o-Zw9" secondAttribute="bottom" id="h7k-iV-UuU"/>
+                <constraint firstAttribute="trailing" secondItem="Olk-g2-mnL" secondAttribute="trailing" id="hXk-A1-KTQ"/>
+                <constraint firstAttribute="bottom" secondItem="M1d-5o-Zw9" secondAttribute="bottom" constant="44" id="onJ-yu-Es6"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="h7k-iV-UuU"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="252" y="203"/>
+        </view>
+    </objects>
+</document>

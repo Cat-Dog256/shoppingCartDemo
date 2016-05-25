@@ -50,6 +50,13 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzs-nA-Vbn">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0UZ-kN-9J7"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -58,10 +65,13 @@
                 <constraint firstAttribute="bottom" secondItem="fl3-XG-g0T" secondAttribute="bottom" id="6it-CQ-okX"/>
                 <constraint firstItem="ucX-l6-l6l" firstAttribute="leading" secondItem="uaD-DZ-bk3" secondAttribute="trailing" constant="10" id="7do-oF-UDf"/>
                 <constraint firstItem="uaD-DZ-bk3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8QW-d9-N8B"/>
+                <constraint firstAttribute="trailing" secondItem="Kzs-nA-Vbn" secondAttribute="trailing" id="9Rh-Fe-oOa"/>
                 <constraint firstItem="uaD-DZ-bk3" firstAttribute="leading" secondItem="fl3-XG-g0T" secondAttribute="trailing" constant="10" id="Cig-pr-VYd"/>
                 <constraint firstAttribute="bottom" secondItem="ucX-l6-l6l" secondAttribute="bottom" id="Gsj-Ll-1Jv"/>
+                <constraint firstItem="Kzs-nA-Vbn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LNL-w5-N4W"/>
                 <constraint firstItem="ucX-l6-l6l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TBV-cJ-Y7T"/>
                 <constraint firstAttribute="bottom" secondItem="uaD-DZ-bk3" secondAttribute="bottom" id="Uzi-xD-Ht1"/>
+                <constraint firstItem="Kzs-nA-Vbn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WLA-aN-g7V"/>
                 <constraint firstAttribute="bottom" secondItem="tFM-ib-l6h" secondAttribute="bottom" id="Y2D-IR-QJs"/>
                 <constraint firstItem="tFM-ib-l6h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="bQS-n2-CnO"/>
                 <constraint firstItem="fl3-XG-g0T" firstAttribute="leading" secondItem="tFM-ib-l6h" secondAttribute="trailing" constant="10" id="hnF-lX-jzk"/>
@@ -74,7 +84,7 @@
                 <outlet property="settlementButton" destination="ucX-l6-l6l" id="YTc-bv-0KE"/>
                 <outlet property="totalPreiceLabel" destination="fl3-XG-g0T" id="tZt-eh-3HW"/>
             </connections>
-            <point key="canvasLocation" x="128" y="182"/>
+            <point key="canvasLocation" x="263" y="189"/>
         </view>
     </objects>
 </document>

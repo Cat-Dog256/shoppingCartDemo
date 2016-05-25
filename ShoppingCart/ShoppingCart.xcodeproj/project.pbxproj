@@ -11,6 +11,15 @@
 		D23A58051CBE514300804D09 /* LCFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23A58041CBE514300804D09 /* LCFooterView.xib */; };
 		D23A58081CBF00BD00804D09 /* LCNormakView.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A58071CBF00BD00804D09 /* LCNormakView.m */; };
 		D23A580E1CBF0DB500804D09 /* LCShoppingCartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A580D1CBF0DB500804D09 /* LCShoppingCartTableViewController.m */; };
+		D24F1B351CF3FE8600DFA19C /* TableViewLearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F1B341CF3FE8600DFA19C /* TableViewLearnViewController.m */; };
+		D24F1B381CF3FED800DFA19C /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F1B371CF3FED800DFA19C /* TableViewDataSource.m */; };
+		D24F1B3C1CF4685700DFA19C /* LCOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F1B3A1CF4685700DFA19C /* LCOrderViewController.m */; };
+		D24F1B3D1CF4685700DFA19C /* LCOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24F1B3B1CF4685700DFA19C /* LCOrderViewController.xib */; };
+		D24F1B401CF46BC400DFA19C /* LCOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F1B3F1CF46BC400DFA19C /* LCOrderHeaderView.m */; };
+		D24F1B421CF46BD000DFA19C /* LCOrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24F1B411CF46BD000DFA19C /* LCOrderHeaderView.xib */; };
+		D24F1B481CF4700D00DFA19C /* LCOrderSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F1B471CF4700D00DFA19C /* LCOrderSectionHeaderView.m */; };
+		D24F1B4E1CF4704800DFA19C /* LCOrderSectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F1B4D1CF4704800DFA19C /* LCOrderSectionFooterView.m */; };
+		D24F1B551CF5317100DFA19C /* LCSumLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D24F1B541CF5317100DFA19C /* LCSumLabel.m */; };
 		D25B35911CBF1F8A00429215 /* LCEditButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B35901CBF1F8A00429215 /* LCEditButton.m */; };
 		D25B35941CBF2D7400429215 /* LCEditingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B35931CBF2D7400429215 /* LCEditingView.m */; };
 		D25B35971CBF2DC100429215 /* LCNavEdittingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B35961CBF2DC100429215 /* LCNavEdittingView.m */; };
@@ -61,6 +70,22 @@
 		D23A58071CBF00BD00804D09 /* LCNormakView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNormakView.m; sourceTree = "<group>"; };
 		D23A580C1CBF0DB500804D09 /* LCShoppingCartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCShoppingCartTableViewController.h; sourceTree = "<group>"; };
 		D23A580D1CBF0DB500804D09 /* LCShoppingCartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCShoppingCartTableViewController.m; sourceTree = "<group>"; };
+		D24F1B331CF3FE8600DFA19C /* TableViewLearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewLearnViewController.h; sourceTree = "<group>"; };
+		D24F1B341CF3FE8600DFA19C /* TableViewLearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewLearnViewController.m; sourceTree = "<group>"; };
+		D24F1B361CF3FED800DFA19C /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		D24F1B371CF3FED800DFA19C /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		D24F1B391CF4685700DFA19C /* LCOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCOrderViewController.h; sourceTree = "<group>"; };
+		D24F1B3A1CF4685700DFA19C /* LCOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCOrderViewController.m; sourceTree = "<group>"; };
+		D24F1B3B1CF4685700DFA19C /* LCOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCOrderViewController.xib; sourceTree = "<group>"; };
+		D24F1B3E1CF46BC400DFA19C /* LCOrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCOrderHeaderView.h; sourceTree = "<group>"; };
+		D24F1B3F1CF46BC400DFA19C /* LCOrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCOrderHeaderView.m; sourceTree = "<group>"; };
+		D24F1B411CF46BD000DFA19C /* LCOrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCOrderHeaderView.xib; sourceTree = "<group>"; };
+		D24F1B461CF4700D00DFA19C /* LCOrderSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCOrderSectionHeaderView.h; sourceTree = "<group>"; };
+		D24F1B471CF4700D00DFA19C /* LCOrderSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCOrderSectionHeaderView.m; sourceTree = "<group>"; };
+		D24F1B4C1CF4704800DFA19C /* LCOrderSectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCOrderSectionFooterView.h; sourceTree = "<group>"; };
+		D24F1B4D1CF4704800DFA19C /* LCOrderSectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCOrderSectionFooterView.m; sourceTree = "<group>"; };
+		D24F1B531CF5317100DFA19C /* LCSumLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSumLabel.h; sourceTree = "<group>"; };
+		D24F1B541CF5317100DFA19C /* LCSumLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSumLabel.m; sourceTree = "<group>"; };
 		D25B358F1CBF1F8A00429215 /* LCEditButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEditButton.h; sourceTree = "<group>"; };
 		D25B35901CBF1F8A00429215 /* LCEditButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCEditButton.m; sourceTree = "<group>"; };
 		D25B35921CBF2D7400429215 /* LCEditingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEditingView.h; sourceTree = "<group>"; };
@@ -137,6 +162,11 @@
 				D23A580D1CBF0DB500804D09 /* LCShoppingCartTableViewController.m */,
 				D25BABBA1CBE13F0005DBD72 /* LCMogoShoppingCartTableViewController.h */,
 				D25BABBB1CBE13F0005DBD72 /* LCMogoShoppingCartTableViewController.m */,
+				D24F1B391CF4685700DFA19C /* LCOrderViewController.h */,
+				D24F1B3A1CF4685700DFA19C /* LCOrderViewController.m */,
+				D24F1B3B1CF4685700DFA19C /* LCOrderViewController.xib */,
+				D24F1B331CF3FE8600DFA19C /* TableViewLearnViewController.h */,
+				D24F1B341CF3FE8600DFA19C /* TableViewLearnViewController.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -148,6 +178,8 @@
 				D25BABB81CBE1153005DBD72 /* LCShoppingModel.m */,
 				D25BABBD1CBE165E005DBD72 /* LCShoppingCartSectionModel.h */,
 				D25BABBE1CBE165E005DBD72 /* LCShoppingCartSectionModel.m */,
+				D24F1B361CF3FED800DFA19C /* TableViewDataSource.h */,
+				D24F1B371CF3FED800DFA19C /* TableViewDataSource.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -176,6 +208,15 @@
 				D25BABB01CBD630B005DBD72 /* LCSelectBoxButton.m */,
 				D25B358F1CBF1F8A00429215 /* LCEditButton.h */,
 				D25B35901CBF1F8A00429215 /* LCEditButton.m */,
+				D24F1B531CF5317100DFA19C /* LCSumLabel.h */,
+				D24F1B541CF5317100DFA19C /* LCSumLabel.m */,
+				D24F1B3E1CF46BC400DFA19C /* LCOrderHeaderView.h */,
+				D24F1B3F1CF46BC400DFA19C /* LCOrderHeaderView.m */,
+				D24F1B411CF46BD000DFA19C /* LCOrderHeaderView.xib */,
+				D24F1B461CF4700D00DFA19C /* LCOrderSectionHeaderView.h */,
+				D24F1B471CF4700D00DFA19C /* LCOrderSectionHeaderView.m */,
+				D24F1B4C1CF4704800DFA19C /* LCOrderSectionFooterView.h */,
+				D24F1B4D1CF4704800DFA19C /* LCOrderSectionFooterView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -353,7 +394,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D25BAB9A1CBD30C9005DBD72 /* shopping.data in Resources */,
+				D24F1B421CF46BD000DFA19C /* LCOrderHeaderView.xib in Resources */,
 				D25BABA61CBD48DC005DBD72 /* LCShopingTableViewCell.xib in Resources */,
+				D24F1B3D1CF4685700DFA19C /* LCOrderViewController.xib in Resources */,
 				D23A58051CBE514300804D09 /* LCFooterView.xib in Resources */,
 				D25BAB761CBD30B7005DBD72 /* LaunchScreen.storyboard in Resources */,
 				D25BABB61CBDE351005DBD72 /* LCTestViewController.xib in Resources */,
@@ -386,18 +429,25 @@
 			files = (
 				D23A58031CBE513400804D09 /* LCFooterView.m in Sources */,
 				D25BABB91CBE1153005DBD72 /* LCShoppingModel.m in Sources */,
+				D24F1B481CF4700D00DFA19C /* LCOrderSectionHeaderView.m in Sources */,
 				D25BAB6E1CBD30B7005DBD72 /* ViewController.m in Sources */,
 				D25BAB6B1CBD30B7005DBD72 /* AppDelegate.m in Sources */,
 				D25B35971CBF2DC100429215 /* LCNavEdittingView.m in Sources */,
+				D24F1B4E1CF4704800DFA19C /* LCOrderSectionFooterView.m in Sources */,
 				D25BABB11CBD630B005DBD72 /* LCSelectBoxButton.m in Sources */,
 				D25BABA51CBD48DC005DBD72 /* LCShopingTableViewCell.m in Sources */,
+				D24F1B351CF3FE8600DFA19C /* TableViewLearnViewController.m in Sources */,
 				D25BABBF1CBE165E005DBD72 /* LCShoppingCartSectionModel.m in Sources */,
+				D24F1B551CF5317100DFA19C /* LCSumLabel.m in Sources */,
 				D25BAB681CBD30B7005DBD72 /* main.m in Sources */,
 				D25B35941CBF2D7400429215 /* LCEditingView.m in Sources */,
 				D25BABC31CBE1969005DBD72 /* LCShoppingCartTableViewCell.m in Sources */,
 				D25BABAE1CBD565E005DBD72 /* LCShoppingHeaderView.m in Sources */,
 				D23A580E1CBF0DB500804D09 /* LCShoppingCartTableViewController.m in Sources */,
+				D24F1B381CF3FED800DFA19C /* TableViewDataSource.m in Sources */,
+				D24F1B401CF46BC400DFA19C /* LCOrderHeaderView.m in Sources */,
 				D25B35911CBF1F8A00429215 /* LCEditButton.m in Sources */,
+				D24F1B3C1CF4685700DFA19C /* LCOrderViewController.m in Sources */,
 				D25BABBC1CBE13F0005DBD72 /* LCMogoShoppingCartTableViewController.m in Sources */,
 				D25BABB51CBDE351005DBD72 /* LCTestViewController.m in Sources */,
 				D23A58081CBF00BD00804D09 /* LCNormakView.m in Sources */,

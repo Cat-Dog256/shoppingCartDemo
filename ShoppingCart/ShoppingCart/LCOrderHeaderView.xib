@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCOrderHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系人信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUu-LX-5SH">
+                    <rect key="frame" x="10" y="10" width="300" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="CaN-Tq-X5r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系人:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a16-fu-Ngi">
+                    <rect key="frame" x="10" y="41" width="300" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Ety-VP-3nd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系人电话:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mu-ml-xvX">
+                    <rect key="frame" x="10" y="71" width="300" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Uk2-0a-FVI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpo-30-Uii">
+                    <rect key="frame" x="0.0" y="99" width="320" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="DjU-9H-v0g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gpo-30-Uii" secondAttribute="trailing" id="3iT-zK-XNP"/>
+                <constraint firstAttribute="bottom" secondItem="gpo-30-Uii" secondAttribute="bottom" id="B1r-r5-6vE"/>
+                <constraint firstItem="7mu-ml-xvX" firstAttribute="top" secondItem="a16-fu-Ngi" secondAttribute="bottom" constant="10" id="E2c-Sm-AXh"/>
+                <constraint firstItem="hUu-LX-5SH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="IzZ-mu-1oD"/>
+                <constraint firstItem="7mu-ml-xvX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Jd2-07-piN"/>
+                <constraint firstAttribute="trailing" secondItem="a16-fu-Ngi" secondAttribute="trailing" constant="10" id="MJm-VQ-joC"/>
+                <constraint firstAttribute="trailing" secondItem="hUu-LX-5SH" secondAttribute="trailing" constant="10" id="Pwk-8e-ytj"/>
+                <constraint firstItem="hUu-LX-5SH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="YCd-kt-QvQ"/>
+                <constraint firstAttribute="trailing" secondItem="7mu-ml-xvX" secondAttribute="trailing" constant="10" id="a42-k2-2d0"/>
+                <constraint firstItem="a16-fu-Ngi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="bxB-20-jbG"/>
+                <constraint firstItem="a16-fu-Ngi" firstAttribute="top" secondItem="hUu-LX-5SH" secondAttribute="bottom" constant="10" id="gDQ-Cf-6Ns"/>
+                <constraint firstItem="gpo-30-Uii" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wp5-EJ-OsK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="userNameLabel" destination="a16-fu-Ngi" id="SWf-oV-ocI"/>
+                <outlet property="userPhoneNumberLabel" destination="7mu-ml-xvX" id="GCD-Uv-Bec"/>
+            </connections>
+        </view>
+    </objects>
+</document>

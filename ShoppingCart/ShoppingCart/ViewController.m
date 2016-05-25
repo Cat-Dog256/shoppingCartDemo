@@ -18,6 +18,12 @@
 @end
 
 @implementation ViewController
+- (BOOL)prefersStatusBarHidden
+{
+    // iOS7后,[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    // 已经不起作用了
+    return YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

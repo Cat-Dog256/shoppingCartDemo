@@ -7,13 +7,16 @@
 //
 
 #import "LCMogoShoppingCartTableViewController.h"
-#import "LCTestViewController.h"
+#import "LCOrderViewController.h"
 #import "LCShoppingHeaderView.h"
 #import "LCShoppingCartTableViewCell.h"
 #import "LCShoppingCartSectionModel.h"
 #import "LCShoppingModel.h"
 #import "LCFooterView.h"
 #import "LCEditButton.h"
+
+
+#import "LCTestViewController.h"
 @interface LCMogoShoppingCartTableViewController ()<LCShoppingHeaderView_delegate , LCShoppingCartTableViewCell_delegate, UITableViewDelegate , UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic , strong) NSMutableArray *myDataArray;
 @property (nonatomic , strong) NSMutableArray *selectedIndexPaths;
@@ -83,7 +86,7 @@
 }
 #pragma mark**nav设置**
 - (void)makeNavButton{
-    self.navigationItem.title = [NSString stringWithFormat:@"购物车(%lu)",self.allGoodCount];
+    self.navigationItem.title = [NSString stringWithFormat:@"购物车(%lu)",(unsigned long)self.allGoodCount];
     LCEditButton *button = [[LCEditButton alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
     [button addTarget:self action:@selector(preessBarEnditButton:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button];
@@ -137,8 +140,8 @@
     }];
     //结算
     [self.footerView pressSettlementButtonBlock:^(UIButton *sender) {
-        LCTestViewController *testVC = [[LCTestViewController alloc]init];
-        testVC.navigationItem.title = @"结算";
+        LCOrderViewController *testVC = [[LCOrderViewController alloc]init];
+        testVC.navigationItem.title = @"确认订单";
         [self.navigationController pushViewController:testVC animated:YES];
     }];
 
@@ -154,7 +157,7 @@
 - (void)setTotalPrice:(double)totalPrice{
     _totalPrice = totalPrice;
     NSLog(@"%f",totalPrice);
-    self.footerView.selectGoodCount = [NSString stringWithFormat:@"%lu",self.selectedCount];
+    self.footerView.selectGoodCount = [NSString stringWithFormat:@"%lu",(unsigned long)self.selectedCount];
     self.footerView.totalPriceString = [NSString stringWithFormat:@"%.02f",totalPrice];
     
 }
@@ -317,9 +320,9 @@
 #pragma mark**sectionHeaderView**
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
-    LCShoppingHeaderView *tittleView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[NSString stringWithFormat:@"tittleView%lu",section]];
+    LCShoppingHeaderView *tittleView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[NSString stringWithFormat:@"tittleView%lu",(long)section]];
     if (!tittleView) {
-        tittleView = [[LCShoppingHeaderView alloc]initWithReuseIdentifier:[NSString stringWithFormat:@"tittleView%lu",section]];
+        tittleView = [[LCShoppingHeaderView alloc]initWithReuseIdentifier:[NSString stringWithFormat:@"tittleView%lu",(long)section]];
         tittleView.header_Delegate = self;
     }
     tittleView.section = section;

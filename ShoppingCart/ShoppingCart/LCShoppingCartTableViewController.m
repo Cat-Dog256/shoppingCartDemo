@@ -138,9 +138,9 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
-    LCShoppingHeaderView *tittleView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[NSString stringWithFormat:@"tittleView%lu",section]];
+    LCShoppingHeaderView *tittleView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[NSString stringWithFormat:@"tittleView%lu",(long)section]];
     if (!tittleView) {
-        tittleView = [[LCShoppingHeaderView alloc]initWithReuseIdentifier:[NSString stringWithFormat:@"tittleView%lu",section]];
+        tittleView = [[LCShoppingHeaderView alloc]initWithReuseIdentifier:[NSString stringWithFormat:@"tittleView%lu",(long)section]];
         tittleView.header_Delegate = self;
         NSLog(@"%s",__func__);
     }
